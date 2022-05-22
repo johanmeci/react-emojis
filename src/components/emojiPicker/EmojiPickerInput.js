@@ -1,0 +1,14 @@
+import { useRef } from "react";
+import EmojiPicker from "./EmojiPicker";
+
+export default function EmojiPickerInput() {
+
+  const refInput = useRef(null);
+
+  return (
+    <div>
+      <input ref={refInput} type="text" />
+      <EmojiPicker ref={refInput} />
+    </div>
+  )
+}
